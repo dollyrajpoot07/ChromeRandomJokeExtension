@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui;
+    display: grid;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    background-image: url("background1.jpeg");
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    box-sizing: border-box;
+}
+
+p {
+    display: inner-flex;
+    margin: auto 10px;
+    font-size: 24px;
+    color: #000000;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid rgb(230, 173, 225);
+    padding: 10px;
+}
+
+.btn {
+    padding: 10px 2px;
+    margin: auto 10px;
+    border: none;
+    outline: 0;
+    letter-spacing: 1px;
+    background-color: #111;
+    border-radius: 6px;
+    color: #fff;
+    border-radius: 5;
+    cursor: pointer;
+    position: relative;
+    transition:all 0.5s linear;
+}
+
+.btn:active {
+    transform: scale(0.8);
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    border: 1px solid rgb(0, 85, 255);
+    background: rgb(0, 89, 255);
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1s linear;
+    z-index: -1;
+    opacity: 1;
+}
+
+.circleBorder {
+    border: 2px solid rgb(255, 230, 0);
+    background-color: yellow;   
+}
+
+.circleBorders {
+    border: 2px solid rgb(255, 0, 191);
+    background-color: rgb(255, 0, 255);
+}
